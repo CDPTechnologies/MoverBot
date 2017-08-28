@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<Model Version="2.0" Name="RbControl.control">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Priority>normal</Priority>
+ <fs>5</fs>
+ <Attributes>
+  <Attribute Name="Description" Value="Simple component"/>
+  <Attribute ReadOnly="1" Name="Model" Value="RbControl.control" Required="1" Type="string" Description="Implementation model used." SaveOnChange="0"/>
+ </Attributes>
+ <Element RouteMethod="RouteEvent" LogEventOnChange="0" Name="cmd_ln" Type="string" SaveOnChange="0"/>
+ <Element RouteMethod="RouteEvent" LogEventOnChange="0" Name="cmdHistory" Type="string" SaveOnChange="0"/>
+ <Element RouteMethod="RouteEvent" LogEventOnChange="0" Name="fileName" Type="string" SaveOnChange="0"/>
+ <Signals>
+  <Signal Unit="" Name="leftFoward" Value="" Input="0" Model="CDPSignal&lt;bool&gt;" Type="bool" Description=""/>
+  <Signal Unit="" Name="leftBackward" Value="" Input="0" Model="CDPSignal&lt;bool&gt;" Type="bool" Description=""/>
+  <Signal Name="rightFoward" Input="0" Model="CDPSignal&lt;bool&gt;" Type="bool"/>
+  <Signal Unit="" Name="rightBackward" Value="" Input="0" Model="CDPSignal&lt;bool&gt;" Type="bool" Description=""/>
+  <Signal Name="leftEnable" Input="0" Model="CDPSignal&lt;bool&gt;" Type="bool"/>
+  <Signal Name="rightEnable" Input="0" Model="CDPSignal&lt;bool&gt;" Type="bool"/>
+ </Signals>
+ <Messages>
+  <Message Name="MOVE_UP"/>
+  <Message Name="MOVE_DOWN"/>
+  <Message Name="MOVE_LEFT"/>
+  <Message Name="MOVE_RIGHT"/>
+  <Message Name="SPIN"/>
+  <Message Name="DoCircle"/>
+  <Message Name="Asterisk"/>
+  <Message Name="DoRetangle"/>
+ </Messages>
+ <Parameters>
+  <Parameter Name="DelayTimer"/>
+ </Parameters>
+</Model>

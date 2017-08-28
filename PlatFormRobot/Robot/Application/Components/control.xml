@@ -1,0 +1,22 @@
+<Component Model='RbControl.control' Name='control' src='Components/control.xml'>
+  <fs>5</fs>
+
+  <Signals>
+    <Signal Description='Process run time each s.' DisplayLevel='10' Input='0' Model='CDPSignal&lt;double&gt;' Name='Process Timer' Type='double' Unit='s/s'></Signal>
+    <Signal Description='Process interval [s].' DisplayLevel='10' Input='0' Model='CDPSignal&lt;double&gt;' Name='Process Period' Type='double' Unit='s'></Signal>
+    <Signal Input='0' Model='CDPSignal&lt;bool&gt;' Name='leftFoward' Type='bool'  Value='0'></Signal>
+    <Signal Input='0' Model='CDPSignal&lt;bool&gt;' Name='leftBackward' Type='bool'  Value='0'></Signal>
+    <Signal Input='0' Model='CDPSignal&lt;bool&gt;' Name='rightFoward' Type='bool'></Signal>
+    <Signal Input='0' Model='CDPSignal&lt;bool&gt;' Name='rightBackward' Type='bool'></Signal>
+    <Signal Input='0' Model='CDPSignal&lt;bool&gt;' Name='leftEnable' Type='bool'></Signal>
+    <Signal Input='0' Model='CDPSignal&lt;bool&gt;' Name='rightEnable' Type='bool'></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description='A component was suspended!' DisplayLevel='10' Enabled='1' Level='Warning' Model='CDPAlarm' Name='Component Suspended' Text='Component was suspended!'></Alarm>
+  </Alarms>
+
+  <Parameters>
+    <Parameter Name='DelayTimer' Value='0'></Parameter>
+  </Parameters>
+</Component>

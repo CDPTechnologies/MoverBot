@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="CDPBaseMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main Window</string>
+  </property>
+  <property name="msgBoxBgSvg">
+   <string>:/themes/flat_light/backgrounds/bgMsgBox.svg</string>
+  </property>
+  <property name="msgBoxBtnSvg">
+   <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+  </property>
+  <property name="themeNight">
+   <string>flat_dark</string>
+  </property>
+  <property name="themeDay">
+   <string>flat_light</string>
+  </property>
+  <property name="numPadName" stdset="0">
+   <string>CDPBaseNumPad</string>
+  </property>
+  <property name="keyPadName" stdset="0">
+   <string>CDPBaseKeyPad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Up</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="cdpProperty" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control</string>
+    </property>
+    <property name="cdpTextCommand">
+     <string>MOVE_UP</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>50</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Down</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="cdpProperty" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control</string>
+    </property>
+    <property name="cdpTextCommand">
+     <string>MOVE_DOWN</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Left</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="cdpProperty" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control</string>
+    </property>
+    <property name="cdpTextCommand">
+     <string>MOVE_LEFT</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>110</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Right</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="cdpProperty" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control</string>
+    </property>
+    <property name="cdpTextCommand">
+     <string>MOVE_RIGHT</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseLabel" name="cdpBaseLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Movement</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_5">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>50</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>360 Spin</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="cdpProperty" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control</string>
+    </property>
+    <property name="cdpTextCommand">
+     <string>SPIN</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_6">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>110</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Retangle</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="cdpProperty" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control</string>
+    </property>
+    <property name="cdpTextCommand">
+     <string>DoRetangle</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_7">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>50</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Circle</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="cdpProperty" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control</string>
+    </property>
+    <property name="cdpTextCommand">
+     <string>DoCircle</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_8">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>110</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Asterisk</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+    </property>
+    <property name="cdpProperty" stdset="0">
+     <string/>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control</string>
+    </property>
+    <property name="cdpTextCommand">
+     <string>Asterisk</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseLabel" name="cdpBaseLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Special Features</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseLabel" name="cdpBaseLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Command Line:</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseLabel" name="cdpBaseLabel_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>280</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Commands</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control.cmdHistory</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseLineEdit" name="cdpBaseLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>350</y>
+      <width>401</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/backgrounds/bgLineEdit.svg</string>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control.cmd_ln</string>
+    </property>
+    <property name="cdpPromptForChanges" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="CDPBaseLabel" name="cdpBaseLabel_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>390</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Custom Script:</string>
+    </property>
+   </widget>
+   <widget class="CDPBaseLineEdit" name="cdpBaseLineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>390</y>
+      <width>401</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Not connected</string>
+    </property>
+    <property name="svgFile">
+     <string>:/themes/flat_light/backgrounds/bgLineEdit.svg</string>
+    </property>
+    <property name="cdpRouting" stdset="0">
+     <string>Robot.control.fileName</string>
+    </property>
+    <property name="cdpPromptForChanges" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBaseLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>CDPBaseWidgets/CDPBaseLineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseButton</class>
+   <extends>QPushButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseButtonMsg</class>
+   <extends>CDPBaseButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButtonMsg.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLabel</class>
+   <extends>QLabel</extends>
+   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseMainWindow</class>
+   <extends>QMainWindow</extends>
+   <header>CDPBaseWidgets/CDPBaseMainWindow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

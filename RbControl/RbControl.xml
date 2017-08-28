@@ -1,0 +1,5 @@
+<Library Name="RbControl">
+ <Models>
+  <Model Name="RbControl.control"/>
+ </Models>
+</Library>
