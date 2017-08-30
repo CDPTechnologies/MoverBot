@@ -38,7 +38,7 @@ protected:
     CDPProperty<std::string> cmd_ln;
     CDPProperty<std::string> cmdHistory;
     CDPProperty<std::string> fileName;
-    CDPParameterTimer DelayTimer;
+    CDPParameterTimer delayTimer;
     CDPSignal<bool> leftFoward;
     CDPSignal<bool> leftBackward;
     CDPParameterTimer delayTimer;

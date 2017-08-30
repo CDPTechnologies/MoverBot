@@ -18,7 +18,7 @@ void control::Create(const char* fullName)
     cmd_ln.Create("cmd_ln",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&control::cmdHandler,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
     cmdHistory.Create("cmdHistory",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
     fileName.Create("fileName",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&control::fileHandler,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
-    DelayTimer.Create("DelayTimer",this);
+    delayTimer.Create("DelayTimer",this);
     leftFoward.Create("leftFoward",this);
     leftBackward.Create("leftBackward",this);
     rightFoward.Create("rightFoward",this);
@@ -51,7 +51,7 @@ void control::ProcessNull()
 {
     leftEnable = true;
     rightEnable = true;
-    if(DelayTimer.TimedOut() && !Flag)
+    if(delayTimer.TimedOut() && !Flag)
     {
         cleanUp();
     }
@@ -184,8 +184,8 @@ void control::moveDown(double ms)
     CDPMessage("Turning down %f seconds\r\n",ms);
     leftBackward = true;
     rightBackward = true;
-    DelayTimer.SetValue(ms);
-    DelayTimer.Restart();
+    delayTimer.SetValue(ms);
+    delayTimer.Restart();
     Flag = false;
     }
 }
@@ -198,8 +198,8 @@ void control::moveLeft(double ms)
     if(Flag)  {
     CDPMessage("Turning left %f seconds\r\n",ms);
     rightFoward = true;
-    DelayTimer.SetValue(ms);
-    DelayTimer.Restart();
+    delayTimer.SetValue(ms);
+    delayTimer.Restart();
     Flag = false;
     }
 
@@ -214,8 +214,8 @@ void control::moveUp(double ms)
     CDPMessage("Turning up %f seconds\r\n",ms);
     leftFoward = true;
     rightFoward = true;
-    DelayTimer.SetValue(ms);
-    DelayTimer.Restart();
+    delayTimer.SetValue(ms);
+    delayTimer.Restart();
     Flag = false;
     }
 }
@@ -228,8 +228,8 @@ void control::moveRight(double ms)
     if(Flag)  {
     CDPMessage("Turning right %f seconds\r\n",ms);
     leftFoward = true;
-    DelayTimer.SetValue(ms);
-    DelayTimer.Restart();
+    delayTimer.SetValue(ms);
+    delayTimer.Restart();
     Flag = false;
     }
 }
